@@ -1,0 +1,81 @@
+nav {
+  padding: 10px;
+}
+
+nav .navbar-brand img {
+  max-height: 3.2rem;
+  position: relative;
+  top: -5px;
+}
+
+nav .navbar-brand strong {
+  font-size: 20px;
+  margin-left: 5px;
+  color: white;
+}
+
+nav .navbar-brand span {
+  color: black;
+}
+
+#banner-area {
+  width: auto;
+}
+
+#banner-area .jumbotron {
+  background-color: #779cb3;
+  color: white;
+  padding: 40px;
+}
+
+#banner-area .jumbotron #banner-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#banner-area .jumbotron #banner-contents #banner-text {
+  width: 600px;
+  text-align: center;
+}
+
+#banner-area .jumbotron #banner-contents #banner-text h1 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+  font-weight: 400;
+}
+
+#banner-area .jumbotron #banner-contents #banner-text h1 span {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+#banner-area .jumbotron #banner-contents #banner-text p {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+#banner-area .jumbotron #banner-contents #banner-text button {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#banner-area .jumbotron #banner-contents #banner-image {
+  width: 600px;
+}
+
+#banner-area .jumbotron #banner-contents #banner-image img {
+  width: auto;
+}
+
+@media only screen and (max-width: 450px) {
+  #banner-image {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

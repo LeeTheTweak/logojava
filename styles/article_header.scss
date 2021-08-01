@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+header {
+    border-bottom: 30px solid #4a4a4a;
+    .article-banner {
+        padding: 5% 10% 2% 10%;
+        text-align: center;
+        #banner-title {
+            #size1 {
+                font-weight: bold;
+                font-size: 5vw;
+            }
+            #size2 {
+                font-weight: bold;
+                font-size: 10vw;
+                line-height: .5;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@import "../node_modules/bulma/bulma";

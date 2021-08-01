@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "header.scss";
+@import "article_header.scss";
+
+#article-content {
+    width: 970px;
+    margin-bottom: 10px;
+    margin: auto;
+    
+    #published {
+        span {
+            color: blue;
+        }
+    }
+
+    figure {
+        width: 800px;
+        margin: auto;
+        figcaption {
+            text-align: center;
+        }
+    }
+
+    .left {
+        float: left;
+        width: 550px;
+        border-radius: 5px;
+        margin: 5px;
+        display: block;
+    }
+    .large {
+        width: 800px;
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .border {
+        border-radius: 10px;
+        border: 5px solid #4a4a4a;
+    }
+    .light-border {
+        border-radius: 10px;
+        border: 2px solid #cccccc;
+        width: 800px;
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .right {
+        float: right;
+        width: 550px;
+        border-radius: 5px;
+        margin: 5px; 
+        display: block;
+    }
+
+    p {
+        margin-bottom: 10px;
+        line-height: 1.7;
+        text-align: justify;
+        font-size: 23px;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .image-title {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        img {
+            width: 230px;
+            height: 160px;
+            margin: 5px;
+        }
+        p {
+            font-family: Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    }
+}
+@media only screen and (min-width: 429px ) and (max-width: 768px) {
+    #article-content {
+        width: auto;
+        padding: 10px;
+
+        figure {
+            width: auto;
+        }
+
+        .large {
+            width: auto;
+            margin: auto;
+            img {
+                width: auto;
+                margin: 0;
+            }
+        }
+
+       
+
+        figcaption {
+            width: 500px;
+            margin: auto;
+        }
+    }
+}
+@media only screen and (max-width: 428px) {
+    #article-content {
+        width: auto;
+        padding: 10px;
+
+        figure {
+            width: auto;
+        }
+
+        .large {
+            width: auto;
+        }
+
+        img {
+            width: auto;
+        }
+    }
+}
+
+@import "../node_modules/bulma/bulma";

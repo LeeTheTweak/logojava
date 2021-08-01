@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "header.scss";
+@import "../node_modules/bulma/bulma";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+// Lets Get Started Area --------------------------------
+
+#lets-get-started-area {
+    margin-bottom: 10px;
+    #get-started-header {
+        text-align: center;
+        font-size: 3rem;
+        margin: 10px;
+        font-weight: 800;
+    }
+    #get-started-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+            color: #4a4a4a;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .card {
+            width: 400px;
+            margin: 20px;
+            transition: .2s ease-in-out;
+            &:hover {
+                box-shadow: 1px 3px 10px grey;
+                cursor: pointer;
+            }
+            .content {
+                a:nth-child(2) {
+                    color: #5252ee;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 440px) {
+    #lets-get-started-area {
+        #get-started-header {
+            font-size: 2rem;
+        }
+        #get-started-cards {
+            .card {
+                margin: 10px;
+                .card-content {
+                    
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #1b1d29;
+    padding: 70px;
+    color: #bebebe; }
+    footer #footer-contents {
+      text-align: center; }
+      footer #footer-contents ul a {
+        text-decoration: none;
+        color: #bebebe;
+        transition: .2s ease-in-out; }
+        footer #footer-contents ul a:hover {
+          color: #ffffff; }
+      footer #footer-contents #copyright {
+        margin-top: 30px;
+        margin-bottom: 20px; }
+      footer #footer-contents .a2a_kit {
+        width: 180px;
+        margin: auto; }
+        
+
